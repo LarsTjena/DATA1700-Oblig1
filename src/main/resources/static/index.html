@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tittel</title>
+    <title>Data1700: Oblig1 - Kinobilletter</title>
+    <script src="index.js"></script>
 </head>
 <body>
+<h1>Kinobilletter</h1>
+<table>
+
+    <tr><td>Velg film:</td></tr>
+    <tr><td><label for="film"></label><select id="film">
+    <option selected disabled>Velg film</option>
+    <option>Ringenes Herre</option>
+    <option>Hobbiten</option>
+    </select>
+    </td></tr>
+
+    <tr><td>Antall: <label for="antall"></label><input id="antall" type="number" value="" style="width: 50px"><span id="antallMelding" style="color: red;"></span></td></tr>
+</table>
+
+
+<table>
+    <tr><td>Fornavn:</td><td><label for="fornavn"></label><input id="fornavn" type="text"/><span id="fornavnMelding" style="color: red;"></span></td></tr>
+    <tr><td>Etternavn:</td><td><label for="etternavn"></label><input id="etternavn" type="text"/><span id="etternavnMelding" style="color: red;"></span></td></tr>
+    <tr><td>Telefonnr:</td><td><label for="telefonnr"></label><input id="telefonnr" type="number"/><span id="telefonnrMelding" style="color: red;"></span></td></tr>
+    <tr><td>Epost:</td><td><label for="epost"></label><input id="epost" type="text" value=""/><span id="epostMelding" style="color: red;"></span></td></tr>
+    <tr><td><button onclick="kjop()">Kjøp billett</button></td></tr>
+</table>
+<h2>Alle billetter</h2>
+<div id="billettregister"></div>
+
+<button onclick="slett()">Slett alle billettene</button>
+
+
 
 </body>
 </html>
